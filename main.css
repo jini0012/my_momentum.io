@@ -102,14 +102,17 @@ ul li::before {
   margin-right: 1rem;
 }
 .today-quote {
-  width: 150rem;
   word-break: keep-all;
   position: absolute;
   bottom: 0rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
+}
+
+.quote {
+  width: calc(100% + 4rem);
   border-radius: 50rem;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .today-weather {
