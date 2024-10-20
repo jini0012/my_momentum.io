@@ -9,7 +9,7 @@ const savedUserName = localStorage.getItem(USERNAME_KEY); // 로컬스토리지�
 // userName이 저장되었을 떄 사용되는 함수
 function savedUser(userName) {
   loginForm.hidden = true;
-  greeting.textContent = `Hi, ${userName}`;
+  greeting.textContent = `Hi, ${userName}! :)`;
 }
 
 function getUserName(event) {
