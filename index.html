@@ -7,10 +7,8 @@
     <title>Momentum</title>
     <h1 class="greeting">Hi</h1>
     <form action="#" class="loginForm">
-      <label for="name"></label>
       <input
         type="text"
-        id="name"
         placeholder="이름을 작성해주세요 :)"
         maxlength="10"
         required
@@ -18,6 +16,10 @@
       <button type="submit">로그인</button>
     </form>
     <h2 class="clock">00:00:00</h2>
+    <form action="#" class="todoForm">
+      <input type="text" placeholder="할일을 입력하세요." />
+    </form>
+    <ul class="todoList"></ul>
     <div class="quote">
       <div></div>
       <div></div>
@@ -28,5 +30,6 @@
     <script src="./js/greetings.js"></script>
     <script src="./js/clock.js"></script>
     <script src="./js/quotes.js"></script>
+    <script src="./js/todo.js"></script>
   </body>
 </html>
