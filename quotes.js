@@ -71,4 +71,20 @@ const quotes = [
     quote: "자신을 내보여라. 그러면 재능이 드러날 것이다.",
     author: "발타사르 그라시안",
   },
+  {
+    quote: "겨울이 오면 봄이 멀지 않으리",
+    author: "셸리",
+  },
+  {
+    quote: "인생을 다시 산다면 다음번에는 더 많은 실수를 저지르리라",
+    author: "나딘 스테어",
+  },
 ];
+
+const quote = document.querySelector(".quote div:first-child");
+const author = document.querySelector(".quote div:last-child");
+
+const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+quote.innerText = todayQuote.quote;
+author.innerText = todayQuote.author;
