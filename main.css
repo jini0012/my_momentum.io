@@ -25,7 +25,6 @@ body {
   align-items: center;
   border-radius: 10rem;
   border: ivory solid 0.2rem;
-  /* gap: 5rem; */
 }
 
 input {
@@ -99,6 +98,7 @@ ul li button {
 
 ul li::before {
   content: "💖";
+  font-size: 3rem;
   margin-right: 1rem;
 }
 .today-quote {
