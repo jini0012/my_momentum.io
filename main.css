@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+  color: ivory;
+  font-family: "DungGeunMo";
+}
+
+body {
+  font-size: 3rem;
+  margin: 20rem;
+  height: 70vh;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10rem;
+  border: ivory solid 0.2rem;
+  /* gap: 5rem; */
+}
+
+input {
+  font-size: 2rem;
+  border: none;
+  background: none;
+  border-bottom: 0.2rem solid ivory;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+input::placeholder {
+  color: antiquewhite;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+button {
+  font-size: 1.5rem;
+  border-radius: 5rem;
+  border: ivory solid 0.2rem;
+  width: 7rem;
+  height: 3rem;
+  background: none;
+  color: ivory;
+  cursor: pointer;
+}
+.changeBackground {
+  opacity: 0.5;
+  width: 13rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 8rem;
+  text-shadow: 1rem 1rem #0000001a;
+}
+h2 {
+  font-size: 10rem;
+  text-shadow: 1rem 1rem #0000001a;
+}
+
+.to-do {
+  text-align: center;
+}
+
+ul {
+  max-height: 32rem;
+  overflow: auto;
+
+  /* 스크롤바 숨기기 */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 스크롤바 숨기기 */
+ul::-webkit-scrollbar {
+  display: none;
+}
+
+ul li {
+  list-style: none;
+  font-size: 4rem;
+}
+
+ul li button {
+  margin-left: 2rem;
+}
+
+ul li::before {
+  content: "💖";
+  margin-right: 1rem;
+}
+.today-quote {
+  width: 150rem;
+  word-break: keep-all;
+  position: absolute;
+  bottom: 0rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 50rem;
+}
+
+.today-weather {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  color: #fff;
+}
