@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
-    <title>Momentum</title>
+    <title>LOFI</title>
+
+    <button class="changeBackground">배경사진 변경</button>
+
     <h1 class="greeting">Hi</h1>
+
     <form action="#" class="loginForm">
       <input
         type="text"
@@ -13,17 +17,31 @@
         maxlength="10"
         required
       />
-      <button type="submit">로그인</button>
+      <button type="submit">Login</button>
     </form>
+
     <h2 class="clock">00:00:00</h2>
-    <form action="#" class="todoForm">
-      <input type="text" placeholder="할일을 입력하세요." />
-    </form>
-    <ul class="todoList"></ul>
-    <div class="quote">
-      <div></div>
-      <div></div>
-    </div>
+
+    <article class="to-do">
+      <form action="#" class="todoForm">
+        <input type="text" placeholder="할일을 입력하세요!" />
+      </form>
+      <ul class="todoList"></ul>
+    </article>
+
+    <article class="today-quote">
+      <div class="quote">
+        <div></div>
+        <div></div>
+      </div>
+    </article>
+
+    <article class="today-weather">
+      <div class="weather">
+        <div></div>
+        <div></div>
+      </div>
+    </article>
   </head>
   <body>
     <script src="./js/background.js"></script>

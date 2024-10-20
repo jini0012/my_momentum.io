@@ -10,6 +10,7 @@ const savedUserName = localStorage.getItem(USERNAME_KEY); // 로컬스토리지�
 function savedUser(userName) {
   loginForm.hidden = true;
   greeting.textContent = `Hi, ${userName}! :)`;
+  document.title = `${userName}'s Page!`;
 }
 
 function getUserName(event) {
