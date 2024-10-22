@@ -4,7 +4,7 @@
 
 ### 나만의 Lo-Fi 페이지
 
-구글의 확장프로그램인 모멘텀 앱(https://momentumdash.com/)의 기능 일부를 바닐라 JS로 구현했습니다.
+구글의 확장프로그램인 모멘텀 앱(https://momentumdash.com/) 의 기능 일부를 바닐라 JS로 구현했습니다.
 
 ## 사용 기술
 
