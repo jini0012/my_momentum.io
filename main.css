@@ -1,123 +1,177 @@
 @font-face {
-  font-family: "DungGeunMo";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'DungGeunMo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 html {
-  font-size: 10px;
-  color: ivory;
-  font-family: "DungGeunMo";
+    font-size: 10px;
+    color: ivory;
+    font-family: 'DungGeunMo';
 }
 
 body {
-  font-size: 3rem;
-  margin: 10rem;
-  height: 80vh;
+    font-size: 3rem;
+    margin: 10rem;
+    height: 80vh;
 
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10rem;
-  border: ivory solid 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10rem;
+    border: ivory solid 0.2rem;
 }
 
 input {
-  font-size: 2rem;
-  border: none;
-  background: none;
-  border-bottom: 0.2rem solid ivory;
-  border-radius: 1rem;
-  text-align: center;
+    font-size: 2rem;
+    border: none;
+    background: none;
+    border-bottom: 0.2rem solid ivory;
+    border-radius: 1rem;
+    text-align: center;
 }
 
 input::placeholder {
-  color: antiquewhite;
-  background-color: rgba(0, 0, 0, 0.2);
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 button {
-  font-size: 1.5rem;
-  border-radius: 5rem;
-  border: ivory solid 0.2rem;
-  width: 7rem;
-  height: 3rem;
-  background: none;
-  color: ivory;
-  cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+    border: ivory solid 0.2rem;
+    width: 7rem;
+    height: 3rem;
+    background: none;
+    color: ivory;
+    cursor: pointer;
 }
 .changeBackground {
-  opacity: 0.5;
-  width: 13rem;
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
+    opacity: 0.5;
+    width: 13rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.changeBackground.two {
+    display: none;
 }
 
 h1 {
-  font-size: 6rem;
-  margin-top: 8rem;
-  text-shadow: 1rem 1rem #0000001a;
+    font-size: 6rem;
+    margin-top: 8rem;
+    text-shadow: 1rem 1rem #0000001a;
 }
 h2 {
-  font-size: 10rem;
-  text-shadow: 1rem 1rem #0000001a;
+    font-size: 10rem;
+    text-shadow: 1rem 1rem #0000001a;
 }
 
 .to-do {
-  text-align: center;
+    text-align: center;
 }
 
 ul {
-  max-height: 32rem;
-  overflow: auto;
+    max-height: 32rem;
+    overflow: auto;
 
-  /* 스크롤바 숨기기 */
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+    /* 스크롤바 숨기기 */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 /* 스크롤바 숨기기 */
 ul::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 ul li {
-  list-style: none;
-  font-size: 4rem;
+    list-style: none;
+    font-size: 4rem;
 }
 
 ul li button {
-  margin-left: 2rem;
+    margin-left: 2rem;
 }
 
 ul li::before {
-  content: "💖";
-  font-size: 3rem;
-  margin-right: 1rem;
+    content: '💖';
+    font-size: 3rem;
+    margin-right: 1rem;
 }
 .today-quote {
-  word-break: keep-all;
-  position: absolute;
-  bottom: 0rem;
-  text-align: center;
-  color: #fff;
+    word-break: keep-all;
+    position: absolute;
+    bottom: 5rem;
+    text-align: center;
+    color: #fff;
 }
 
 .quote {
-  width: calc(100% + 4rem);
-  border-radius: 50rem;
-  background-color: rgba(0, 0, 0, 0.5);
+    width: calc(100% + 4rem);
+    border-radius: 50rem;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .today-weather {
-  position: absolute;
-  left: 2rem;
-  bottom: 2rem;
-  color: #fff;
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 76.7rem) {
+    body {
+        margin: 2rem;
+        min-width: 20rem;
+        height: 100vh;
+        background-position: center;
+    }
+
+    .changeBackground {
+        top: 1rem;
+        left: 0.5rem;
+        width: 4rem;
+        height: 5rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    input {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        width: 4rem;
+        height: 2rem;
+    }
+
+    ul li {
+        font-size: 2rem;
+    }
+    ul li::before {
+        font-size: 2rem;
+    }
+
+    .today-weather {
+        font-size: 1.5rem;
+        left: 5rem;
+        bottom: 5rem;
+    }
+    .today-quote {
+        font-size: 1.5rem;
+        bottom: 0rem;
+    }
 }
